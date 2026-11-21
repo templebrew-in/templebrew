@@ -1,5 +1,0 @@
-# Enforce canonical apex domain https://templebrew.in
-http://templebrew.in/*   https://templebrew.in/:splat   301!
-https://www.templebrew.in/*   https://templebrew.in/:splat   301!
-/*   /index.html   200
-
