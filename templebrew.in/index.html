@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>TEMPLEBREW | Premium South Indian Filter Coffee</title>
+  <meta name="title" content="TEMPLEBREW | Premium South Indian Filter Coffee">
+  <meta name="description" content="Discover TEMPLEBREW, premium South Indian filter coffee inspired by the tradition of Srirangam and Kumbakonam. Experience rich aroma and authentic filter coffee.">
+  <meta name="keywords" content="TEMPLEBREW, South Indian filter coffee, degree coffee, Srirangam coffee, Kumbakonam coffee, traditional filter coffee, authentic Indian coffee, filter kaapi, premium coffee beans, temple brew">
+  <meta name="author" content="TEMPLEBREW AGRO FOODS">
+  <meta name="theme-color" content="#170905">
+  <meta name="google-site-verification" content="WgnfWBJTpnYa3-Jng74g2p3Vrn_M3mph9j9ZUPUW9vg">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://templebrew.in/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://templebrew.in/">
+  <meta property="og:title" content="TEMPLEBREW | Premium South Indian Filter Coffee">
+  <meta property="og:description" content="Discover TEMPLEBREW, premium South Indian filter coffee inspired by the tradition of Srirangam and Kumbakonam. Experience rich aroma and authentic filter coffee.">
+  <meta property="og:image" content="https://templebrew.in/assets/images/meter_kaapi_pour.jpg">
+  <meta property="og:site_name" content="TEMPLEBREW">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://templebrew.in/">
+  <meta property="twitter:title" content="TEMPLEBREW | Premium South Indian Filter Coffee">
+  <meta property="twitter:description" content="Discover TEMPLEBREW, premium South Indian filter coffee inspired by the tradition of Srirangam and Kumbakonam. Experience rich aroma and authentic filter coffee.">
+  <meta property="twitter:image" content="https://templebrew.in/assets/images/meter_kaapi_pour.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  
+  <!-- Google Fonts Preconnect & Load -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Vendor Libraries (Locally Hosted for High Reliability) -->
+  <script src="vendor/three.min.js"></script>
+  <script src="vendor/OrbitControls.js"></script>
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lucide.min.js"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-espresso text-cream antialiased selection:bg-gold selection:text-black">
+
+  <!-- Floating Quick Cart Button -->
+  <button id="floatingCartBtn" class="floating-cart-pill" aria-label="Open Shopping Cart" title="View Shopping Cart">
+    <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+    <span class="floating-pill-text">Cart</span>
+    <span id="floatingCartBadge" class="floating-pill-badge" style="display:none;">0</span>
+  </button>
+
+  <!-- Ambient Sound / Mute Toggle Button -->
+  <button id="ambientAudioBtn" class="audio-control-btn" aria-label="Toggle Temple Coffee Ambience" title="Toggle Temple Town Ambience">
+    <i data-lucide="volume-x" id="audioIcon"></i>
+    <span class="audio-tooltip">Atmosphere</span>
+  </button>
+
+  <!-- Side Navigation Dots (4 Main Slides) -->
+  <nav class="slide-indicator-nav" aria-label="Slide Navigation">
+    <a href="#slide-1" class="slide-dot active" data-slide="1" title="Hero / Introduction">
+      <span class="dot-num">01</span>
+      <span class="dot-label">HERO</span>
+    </a>
+    <a href="#slide-2" class="slide-dot" data-slide="2" title="Our Signature Coffee">
+      <span class="dot-num">02</span>
+      <span class="dot-label">COFFEE</span>
+    </a>
+    <a href="#slide-3" class="slide-dot" data-slide="3" title="Brand Story & Buy">
+      <span class="dot-num">03</span>
+      <span class="dot-label">HERITAGE & BUY</span>
+    </a>
+    <a href="#slide-4" class="slide-dot" data-slide="4" title="Visit & Contact">
+      <span class="dot-num">04</span>
+      <span class="dot-label">VISIT</span>
+    </a>
+  </nav>
+
+  <!-- Header / Navigation -->
+  <header class="luxury-header" id="mainHeader">
+    <div class="header-container">
+      <!-- Brand Logo -->
+      <a href="#slide-1" class="brand-logo-group">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 40 40" class="gold-temple-symbol" fill="currentColor">
+            <!-- Stylized Temple Gopuram Motif -->
+            <path d="M20 3L14 11H26L20 3Z"/>
+            <path d="M12 12H28L30 19H10L12 12Z"/>
+            <path d="M8 20H32L34 28H6L8 20Z"/>
+            <path d="M4 29H36V34H4V29Z"/>
+            <circle cx="20" cy="24" r="2.5" fill="#170905"/>
+          </svg>
+        </div>
+        <div class="logo-text-block">
+          <span class="brand-title">TEMPLEBREW</span>
+          <span class="brand-subtitle">SOUTH INDIAN FILTER COFFEE</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav">
+        <a href="#slide-1" class="nav-link">Home</a>
+        <a href="#slide-2" class="nav-link">Our Coffee</a>
+        <a href="#slide-3" class="nav-link">Our Story & Buy</a>
+        <a href="#slide-4" class="nav-link">Visit & Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <!-- Shopping Cart Header Button -->
+        <button id="headerCartBtn" class="header-cart-btn" aria-label="Open Shopping Cart" title="View Shopping Cart">
+          <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+          <span class="header-cart-label">Cart</span>
+          <span id="cartCountBadge" class="header-cart-badge" style="display:none;">0</span>
+        </button>
+
+        <a href="https://wa.me/918072435415?text=Hello%20TEMPLEBREW%2C%20I%20would%20like%20to%20order%20authentic%20South%20Indian%20Filter%20Coffee." target="_blank" rel="noopener noreferrer" class="btn-gold-header">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Order via WhatsApp</span>
+        </a>
+        
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileDrawer" class="mobile-drawer">
+    <div class="drawer-header">
+      <div class="logo-text-block">
+        <span class="brand-title">TEMPLEBREW</span>
+        <span class="brand-subtitle">SOUTH INDIAN FILTER COFFEE</span>
+      </div>
+      <button id="closeDrawerBtn" class="close-drawer-btn" aria-label="Close Menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <div class="drawer-links">
+      <a href="#slide-1" class="drawer-link">01. Home & 3D Experience</a>
+      <a href="#slide-2" class="drawer-link">02. Our Signature Coffee</a>
+      <a href="#slide-3" class="drawer-link">03. Heritage Story & Instant Buy</a>
+      <a href="#slide-4" class="drawer-link">04. Visit & Contact</a>
+    </div>
+    <div class="drawer-footer">
+      <p class="drawer-tagline">"Tradition Brewed to Perfection"</p>
+      <a href="https://wa.me/918072435415" target="_blank" rel="noopener noreferrer" class="btn-gold w-full text-center">
+        <i data-lucide="message-circle" class="w-4 h-4 mr-2 inline"></i> Order on WhatsApp
+      </a>
+      <p class="drawer-phone">Direct Line: <a href="tel:+918072435415">+91 80724 35415</a></p>
+    </div>
+  </div>
+
+  <!-- MAIN 4 SLIDES CONTAINER -->
+  <main class="slides-wrapper">
+
+    <!-- ========================================== -->
+    <!-- SLIDE 1: HERO / BRAND INTRODUCTION        -->
+    <!-- ========================================== -->
+    <section id="slide-1" class="slide slide-hero">
+      <!-- Dark Coffee Cinematic Atmospheric Layers -->
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-radial-glow"></div>
+      <canvas id="steamCanvas" class="steam-canvas" aria-hidden="true"></canvas>
+
+      <!-- 3D Three.js Box Interactive Canvas -->
+      <div id="hero3dContainer" class="hero-3d-container">
+        <!-- Three.js WebGL canvas injected here -->
+        <div id="boxLoadingOverlay" class="box-loading-indicator">
+          <div class="gold-spinner"></div>
+          <span>Crafting 3D Packaging...</span>
+        </div>
+      </div>
+
+      <!-- Hero 3D Controls Pill & Blend Switcher -->
+      <div class="hero-3d-controls-bar">
+        <div class="blend-switch-group">
+          <span class="switch-title">SELECT 3D PACK:</span>
+          <button class="blend-pill active" id="btnBlendSrirangam" data-blend="srirangam_cream">
+            <span class="pill-dot"></span>
+            Sri Rangam 250g
+          </button>
+          <button class="blend-pill" id="btnBlendKumbakonam" data-blend="kumbakonam_cream">
+            <span class="pill-dot"></span>
+            Kumbakonam 500g
+          </button>
+          <button class="blend-pill" id="btnBlendMaroon" data-blend="srirangam_maroon">
+            <span class="pill-dot"></span>
+            Maroon Edition
+          </button>
+          <button class="blend-pill" id="btnBlendDark" data-blend="kumbakonam_dark">
+            <span class="pill-dot"></span>
+            Dark Reserve
+          </button>
+        </div>
+        <div class="hint-3d">
+          <i data-lucide="move-3d" class="w-4 h-4 text-warm-gold"></i>
+          <span>Drag to Rotate 360° &bull; Scroll to Journey</span>
+        </div>
+      </div>
+
+      <!-- Hero Content Overlay -->
+      <div class="hero-content-grid">
+        <div class="hero-text-column">
+          <!-- Subtle Heritage Badge -->
+          <div class="hero-heritage-badge">
+            <span class="badge-ornament">✦</span>
+            <span class="badge-text">HERITAGE OF TEMPLE TOWNS • SRIRANGAM & KUMBAKONAM</span>
+            <span class="badge-ornament">✦</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="hero-main-heading">
+            <span class="brand-name-display">TEMPLEBREW</span>
+            <span class="brand-tagline-display">South Indian Filter Coffee</span>
+          </h1>
+
+          <!-- Subheading -->
+          <p class="hero-subheading">
+            "Tradition Brewed to Perfection"
+          </p>
+
+          <!-- Description -->
+          <p class="hero-description">
+            Experience the rich aroma, deep flavour and timeless tradition of authentic South Indian filter coffee. Inspired by the sacred coffee culture of Srirangam and Kumbakonam.
+          </p>
+
+          <!-- Key Highlights Ticker -->
+          <div class="hero-specs-row">
+            <div class="spec-item">
+              <span class="spec-num">80 : 20</span>
+              <span class="spec-label">Coffee : Chicory</span>
+            </div>
+            <div class="spec-divider"></div>
+            <div class="spec-item">
+              <span class="spec-num">Slow</span>
+              <span class="spec-label">Roasting Art</span>
+            </div>
+            <div class="spec-divider"></div>
+            <div class="spec-item">
+              <span class="spec-num">100%</span>
+              <span class="spec-label">Authentic Aroma</span>
+            </div>
+          </div>
+
+          <!-- Hero Buttons -->
+          <div class="hero-cta-group">
+            <a href="#slide-2" class="btn-gold-primary hero-btn">
+              <span>EXPLORE OUR COFFEE</span>
+              <i data-lucide="arrow-down" class="btn-icon"></i>
+            </a>
+            <a href="https://wa.me/918072435415?text=Hello%20TEMPLEBREW%2C%20I%20would%20like%20to%20order%20South%20Indian%20Filter%20Coffee." target="_blank" rel="noopener noreferrer" class="btn-gold-outline hero-btn">
+              <i data-lucide="shopping-bag" class="btn-icon-left"></i>
+              <span>SHOP NOW</span>
+            </a>
+          </div>
+
+          <!-- Additional Hero Flavor Notes Pill Strip -->
+          <div class="hero-flavor-strip">
+            <span class="f-pill"><i data-lucide="sparkles" class="w-3 h-3 text-warm-gold inline"></i> Golden Crema</span>
+            <span class="f-pill"><i data-lucide="flame" class="w-3 h-3 text-warm-gold inline"></i> Slow Roasting</span>
+            <span class="f-pill"><i data-lucide="award" class="w-3 h-3 text-warm-gold inline"></i> 100% Export Grade</span>
+            <span class="f-pill"><i data-lucide="shield-check" class="w-3 h-3 text-warm-gold inline"></i> FSSAI Licensed</span>
+          </div>
+        </div>
+
+        <!-- Right Side Supporting Visual Badge (Traditional Brass Tumbler Imagery) -->
+        <div class="hero-visual-card">
+          <div class="tumbler-glass-card">
+            <img src="assets/images/brass_tumbler.jpg" alt="Traditional Brass Coffee Tumbler & Dabara" class="tumbler-img">
+            <div class="tumbler-card-overlay">
+              <div class="tumbler-meta">
+                <span class="tumbler-badge">DEGREE KAAPI</span>
+                <p class="tumbler-quote">"Frothy, golden, and sacred in every pour."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Luxury Infinite Marquee Ticker -->
+      <div class="hero-marquee-bar">
+        <div class="marquee-track">
+          <span>✦ BREWED IN THE TEMPLE TOWN</span>
+          <span>✦ 100% SLOW ROASTED</span>
+          <span>✦ AUTHENTIC SOUTH INDIAN FILTER KAAPI</span>
+          <span>✦ SRIRANGAM & KUMBAKONAM HERITAGE</span>
+          <span>✦ FSSAI LIC. 12423999001234</span>
+          <span>✦ RICH AROMA & VELVETY DECOCTION</span>
+          <span>✦ 80% COFFEE : 20% CHICORY RATIO</span>
+          <span>✦ BREWED IN THE TEMPLE TOWN</span>
+          <span>✦ 100% SLOW ROASTED</span>
+          <span>✦ AUTHENTIC SOUTH INDIAN FILTER KAAPI</span>
+          <span>✦ SRIRANGAM & KUMBAKONAM HERITAGE</span>
+          <span>✦ FSSAI LIC. 12423999001234</span>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#slide-2" class="hero-scroll-cue" aria-label="Scroll to Products">
+        <span class="cue-label">SCROLL TO EXPLORE</span>
+        <div class="cue-mouse">
+          <div class="cue-wheel"></div>
+        </div>
+      </a>
+    </section>
+
+    <hr class="slide-divider-line">
+
+    <!-- ========================================== -->
+    <!-- SLIDE 2: OUR SIGNATURE PRODUCTS           -->
+    <!-- ========================================== -->
+    <section id="slide-2" class="slide slide-products">
+      <div class="slide-container">
+        <!-- Section Header -->
+        <div class="section-header-center">
+          <div class="gold-eyebrow">
+            <span class="eyebrow-line"></span>
+            <span class="eyebrow-text">AUTHENTIC PACKAGING & BLENDS</span>
+            <span class="eyebrow-line"></span>
+          </div>
+          <h2 class="section-title">OUR SIGNATURE COFFEE</h2>
+          <p class="section-subtitle">"Crafted for the Perfect Filter Coffee"</p>
+          <p class="section-desc">
+            Created with the exact original packaging artwork. Crafted from carefully selected coffee beans and slow-roasted for rich aroma and full-bodied decoction.
+          </p>
+        </div>
+
+        <!-- 4 Premium Product Cards Grid (Featuring all uploaded packaging editions) -->
+        <div class="products-grid-4">
+          
+          <!-- PRODUCT 1: SRI RANGAM DEGREE COFFEE -->
+          <article class="product-card" id="cardProduct1" data-product-card="srirangam_degree">
+            <div class="product-badge-gold">
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>₹50 OFF</span>
+            </div>
+
+            <div class="product-visual-stage">
+              <div class="product-light-spot"></div>
+              <img src="assets/images/product_srirangam_cream.png" alt="TEMPLEBREW Sri Rangam Degree Coffee" class="product-box-img">
+              <div class="product-3d-hint">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-warm-gold"></i>
+                <span>Original Packaging Artwork</span>
+              </div>
+            </div>
+
+            <div class="product-card-body">
+              <div class="product-weight-tag">
+                <i data-lucide="package" class="w-3.5 h-3.5 text-warm-gold"></i>
+                <span>Net Weight: <strong class="product-weight-val">250 g</strong> &bull; Classic Cream</span>
+              </div>
+
+              <h3 class="product-title">TEMPLEBREW SRI RANGAM DEGREE COFFEE</h3>
+
+              <p class="product-desc">
+                "A rich and aromatic traditional South Indian filter coffee blend inspired by the timeless coffee heritage of Srirangam."
+              </p>
+
+              <!-- Selectable Weight Options -->
+              <div class="product-weight-selector" role="radiogroup" aria-label="Select Package Weight">
+                <span class="weight-label-text">Select Weight:</span>
+                <div class="weight-pills-group">
+                  <button type="button" class="weight-pill-btn active" data-product="srirangam_degree" data-weight="250g" role="radio" aria-checked="true">
+                    <span class="pill-weight">250g</span>
+                    <span class="pill-price">₹250</span>
+                  </button>
+                  <button type="button" class="weight-pill-btn" data-product="srirangam_degree" data-weight="500g" role="radio" aria-checked="false">
+                    <span class="pill-weight">500g</span>
+                    <span class="pill-price">₹500</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-price-block">
+                <div class="price-wrap">
+                  <span class="price-strikethrough">₹300</span>
+                  <span class="price-highlight">₹250</span>
+                </div>
+                <span class="savings-pill">Save ₹50</span>
+              </div>
+
+              <div class="product-btn-group">
+                <a href="https://wa.me/918072435415?text=Hello%20TEMPLEBREW%2C%20I%20would%20like%20to%20order%20Srirangam%20Degree%20Coffee%20250g%20for%20%E2%82%B9250." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-order" data-wa-btn="srirangam_degree">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  <span>ORDER 250G (₹250)</span>
+                </a>
+                <div class="product-sub-actions">
+                  <button type="button" class="btn-add-cart" data-cart-btn="srirangam_degree" aria-label="Add Srirangam Degree Coffee to Cart">
+                    <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                    <span>ADD TO CART</span>
+                  </button>
+                  <button type="button" class="btn-view-product" data-product="srirangam_cream" aria-label="View Sri Rangam Coffee in 3D">
+                    <i data-lucide="box" class="w-4 h-4"></i>
+                    <span>3D VIEW</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCT 2: KUMBAKONAM DEGREE COFFEE -->
+          <article class="product-card" id="cardProduct2" data-product-card="kumbakonam_degree">
+            <div class="product-badge-gold">
+              <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+              <span>₹50 OFF</span>
+            </div>
+
+            <div class="product-visual-stage">
+              <div class="product-light-spot"></div>
+              <img src="assets/images/product_kumbakonam_cream.png" alt="TEMPLEBREW Kumbakonam Degree Coffee" class="product-box-img">
+              <div class="product-3d-hint">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-warm-gold"></i>
+                <span>Original Packaging Artwork</span>
+              </div>
+            </div>
+
+            <div class="product-card-body">
+              <div class="product-weight-tag">
+                <i data-lucide="package" class="w-3.5 h-3.5 text-warm-gold"></i>
+                <span>Net Weight: <strong class="product-weight-val">250 g</strong> &bull; Classic Cream</span>
+              </div>
+
+              <h3 class="product-title">TEMPLEBREW KUMBAKONAM DEGREE COFFEE</h3>
+
+              <p class="product-desc">
+                "Enjoy the rich aroma, traditional taste and carefully roasted coffee experience inspired by Kumbakonam's coffee tradition."
+              </p>
+
+              <!-- Selectable Weight Options -->
+              <div class="product-weight-selector" role="radiogroup" aria-label="Select Package Weight">
+                <span class="weight-label-text">Select Weight:</span>
+                <div class="weight-pills-group">
+                  <button type="button" class="weight-pill-btn active" data-product="kumbakonam_degree" data-weight="250g" role="radio" aria-checked="true">
+                    <span class="pill-weight">250g</span>
+                    <span class="pill-price">₹250</span>
+                  </button>
+                  <button type="button" class="weight-pill-btn" data-product="kumbakonam_degree" data-weight="500g" role="radio" aria-checked="false">
+                    <span class="pill-weight">500g</span>
+                    <span class="pill-price">₹500</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-price-block">
+                <div class="price-wrap">
+                  <span class="price-strikethrough">₹300</span>
+                  <span class="price-highlight">₹250</span>
+                </div>
+                <span class="savings-pill">Save ₹50</span>
+              </div>
+
+              <div class="product-btn-group">
+                <a href="https://wa.me/918072435415?text=Hello%20TEMPLEBREW%2C%20I%20would%20like%20to%20order%20Kumbakonam%20Degree%20Coffee%20250g%20for%20%E2%82%B9250." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-order" data-wa-btn="kumbakonam_degree">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  <span>ORDER 250G (₹250)</span>
+                </a>
+                <div class="product-sub-actions">
+                  <button type="button" class="btn-add-cart" data-cart-btn="kumbakonam_degree" aria-label="Add Kumbakonam Degree Coffee to Cart">
+                    <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                    <span>ADD TO CART</span>
+                  </button>
+                  <button type="button" class="btn-view-product" data-product="kumbakonam_cream" aria-label="View Kumbakonam Coffee in 3D">
+                    <i data-lucide="box" class="w-4 h-4"></i>
+                    <span>3D VIEW</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCT 3: SRI RANGAM PREMIUM BLEND -->
+          <article class="product-card" id="cardProduct3" data-product-card="srirangam_blend">
+            <div class="product-badge-gold">
+              <i data-lucide="crown" class="w-3.5 h-3.5"></i>
+              <span>HERITAGE PACK</span>
+            </div>
+
+            <div class="product-visual-stage">
+              <div class="product-light-spot"></div>
+              <img src="assets/images/product_srirangam_maroon.png" alt="TEMPLEBREW Sri Rangam Premium Blend" class="product-box-img">
+              <div class="product-3d-hint">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-warm-gold"></i>
+                <span>Royal Maroon Edition</span>
+              </div>
+            </div>
+
+            <div class="product-card-body">
+              <div class="product-weight-tag">
+                <i data-lucide="package" class="w-3.5 h-3.5 text-warm-gold"></i>
+                <span>Net Weight: <strong class="product-weight-val">250 g</strong> &bull; Maroon Edition</span>
+              </div>
+
+              <h3 class="product-title">TEMPLEBREW SRI RANGAM PREMIUM BLEND</h3>
+
+              <p class="product-desc">
+                "A legacy of purity & richness with deep espresso and roasted caramel notes, wrapped in our royal maroon heritage packaging."
+              </p>
+
+              <!-- Selectable Weight Options -->
+              <div class="product-weight-selector" role="radiogroup" aria-label="Select Package Weight">
+                <span class="weight-label-text">Select Weight:</span>
+                <div class="weight-pills-group">
+                  <button type="button" class="weight-pill-btn active" data-product="srirangam_blend" data-weight="250g" role="radio" aria-checked="true">
+                    <span class="pill-weight">250g</span>
+                    <span class="pill-price">₹300</span>
+                  </button>
+                  <button type="button" class="weight-pill-btn" data-product="srirangam_blend" data-weight="500g" role="radio" aria-checked="false">
+                    <span class="pill-weight">500g</span>
+                    <span class="pill-price">₹600</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-price-block">
+                <div class="price-wrap">
+                  <span class="price-strikethrough">₹350</span>
+                  <span class="price-highlight">₹300</span>
+                </div>
+                <span class="savings-pill">Save ₹50</span>
+              </div>
+
+              <div class="product-btn-group">
+                <a href="https://wa.me/918072435415?text=Hello%20TEMPLEBREW%2C%20I%20would%20like%20to%20order%20Srirangam%20Premium%20Blend%20250g%20for%20%E2%82%B9300." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-order" data-wa-btn="srirangam_blend">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  <span>ORDER 250G (₹300)</span>
+                </a>
+                <div class="product-sub-actions">
+                  <button type="button" class="btn-add-cart" data-cart-btn="srirangam_blend" aria-label="Add Srirangam Premium Blend to Cart">
+                    <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                    <span>ADD TO CART</span>
+                  </button>
+                  <button type="button" class="btn-view-product" data-product="srirangam_maroon" aria-label="View Maroon Edition in 3D">
+                    <i data-lucide="box" class="w-4 h-4"></i>
+                    <span>3D VIEW</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCT 4: KUMBAKONAM PREMIUM BLEND -->
+          <article class="product-card" id="cardProduct4" data-product-card="kumbakonam_blend">
+            <div class="product-badge-gold">
+              <i data-lucide="award" class="w-3.5 h-3.5"></i>
+              <span>DARK RESERVE</span>
+            </div>
+
+            <div class="product-visual-stage">
+              <div class="product-light-spot"></div>
+              <img src="assets/images/product_kumbakonam_dark.png" alt="TEMPLEBREW Kumbakonam Premium Blend" class="product-box-img">
+              <div class="product-3d-hint">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-warm-gold"></i>
+                <span>Dark Espresso Edition</span>
+              </div>
+            </div>
+
+            <div class="product-card-body">
+              <div class="product-weight-tag">
+                <i data-lucide="package" class="w-3.5 h-3.5 text-warm-gold"></i>
+                <span>Net Weight: <strong class="product-weight-val">250 g</strong> &bull; Dark Reserve</span>
+              </div>
+
+              <h3 class="product-title">TEMPLEBREW KUMBAKONAM PREMIUM BLEND</h3>
+
+              <p class="product-desc">
+                "Intense, bold, and double roasted for discerning coffee lovers who crave a strong aroma and an authentic, lingering finish."
+              </p>
+
+              <!-- Selectable Weight Options -->
+              <div class="product-weight-selector" role="radiogroup" aria-label="Select Package Weight">
+                <span class="weight-label-text">Select Weight:</span>
+                <div class="weight-pills-group">
+                  <button type="button" class="weight-pill-btn active" data-product="kumbakonam_blend" data-weight="250g" role="radio" aria-checked="true">
+                    <span class="pill-weight">250g</span>
+                    <span class="pill-price">₹300</span>
+                  </button>
+                  <button type="button" class="weight-pill-btn" data-product="kumbakonam_blend" data-weight="500g" role="radio" aria-checked="false">
+                    <span class="pill-weight">500g</span>
+                    <span class="pill-price">₹600</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-price-block">
+                <div class="price-wrap">
+                  <span class="price-strikethrough">₹350</span>
+                  <span class="price-highlight">₹300</span>
+                </div>
+                <span class="savings-pill">Save ₹50</span>
+              </div>
+
+              <div class="product-btn-group">
+                <a href="https://wa.me/918072435415?text=Hello%20TEMPLEBREW%2C%20I%20would%20like%20to%20order%20Kumbakonam%20Premium%20Blend%20250g%20for%20%E2%82%B9300." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-order" data-wa-btn="kumbakonam_blend">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  <span>ORDER 250G (₹300)</span>
+                </a>
+                <div class="product-sub-actions">
+                  <button type="button" class="btn-add-cart" data-cart-btn="kumbakonam_blend" aria-label="Add Kumbakonam Premium Blend to Cart">
+                    <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                    <span>ADD TO CART</span>
+                  </button>
+                  <button type="button" class="btn-view-product" data-product="kumbakonam_dark" aria-label="View Dark Reserve in 3D">
+                    <i data-lucide="box" class="w-4 h-4"></i>
+                    <span>3D VIEW</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- EXTRA CONTENT: COFFEE GRINDING & ARTISANAL ROASTING STRIP -->
+        <!-- ======================================================== -->
+        <div class="grinding-feature-strip">
+          <div class="grinding-visual-col">
+            <img src="assets/images/coffee_grinding_ritual.jpg" alt="Artisanal Fresh Coffee Grinding Ritual" class="grinding-img">
+            <div class="grinding-badge-overlay">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 inline mr-1 text-warm-gold"></i>
+              <span>PRECISION FILTER GRIND</span>
+            </div>
+          </div>
+          <div class="grinding-content-col">
+            <div class="gold-eyebrow">
+              <span class="eyebrow-line"></span>
+              <span class="eyebrow-text">FRESHLY GROUND TO PERFECTION</span>
+              <span class="eyebrow-line"></span>
+            </div>
+            <h3 class="grinding-title">ARTISANAL GRINDING & ROASTING</h3>
+            <p class="grinding-desc">
+              Great South Indian filter coffee begins with the grind. Our slow-roasted Arabica and Robusta beans are milled to a customized medium-fine consistency tailored exclusively for brass filter percolation.
+            </p>
+            <div class="grinding-points">
+              <div class="g-point">
+                <i data-lucide="check-circle-2" class="g-point-icon"></i>
+                <span><strong>No Powder Leakage:</strong> Milled fine enough for rich extraction without falling through filter perforations.</span>
+              </div>
+              <div class="g-point">
+                <i data-lucide="check-circle-2" class="g-point-icon"></i>
+                <span><strong>Optimal Drip Rate:</strong> Allows hot water to steep for 5&ndash;7 minutes yielding a thick, syrupy decoction.</span>
+              </div>
+              <div class="g-point">
+                <i data-lucide="check-circle-2" class="g-point-icon"></i>
+                <span><strong>Aroma-Locked Packaging:</strong> Ground fresh before packaging into multi-layer foil to seal volatile aromatic oils.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- EXTRA CONTENT: FLAVOR PROFILE & 80:20 RATIO INFOGRAPHIC -->
+        <!-- ======================================================== -->
+        <div class="coffee-lore-grid">
+          
+          <!-- Flavor Radar Card -->
+          <div class="lore-card">
+            <div class="lore-card-header">
+              <i data-lucide="flame" class="w-5 h-5 text-warm-gold"></i>
+              <h3 class="lore-title">ROAST SPECTRUM & TASTING NOTES</h3>
+            </div>
+            <p class="lore-desc">
+              Carefully slow-roasted in artisanal small batches to capture the fragrant caramelized undertones of high-altitude South Indian beans.
+            </p>
+            <div class="flavor-bars">
+              <div class="bar-row">
+                <span class="bar-lbl">Aroma Intensity</span>
+                <div class="bar-track"><div class="bar-fill" style="width: 96%;"></div></div>
+                <span class="bar-val">9.6 / 10</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-lbl">Decoction Body</span>
+                <div class="bar-track"><div class="bar-fill" style="width: 94%;"></div></div>
+                <span class="bar-val">9.4 / 10</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-lbl">Golden Crema / Froth</span>
+                <div class="bar-track"><div class="bar-fill" style="width: 98%;"></div></div>
+                <span class="bar-val">9.8 / 10</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-lbl">Chicory Balance</span>
+                <div class="bar-track"><div class="bar-fill" style="width: 88%;"></div></div>
+                <span class="bar-val">Optimal 20%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Why 80:20 Ratio Card -->
+          <div class="lore-card">
+            <div class="lore-card-header">
+              <i data-lucide="sparkles" class="w-5 h-5 text-warm-gold"></i>
+              <h3 class="lore-title">THE SACRED 80:20 BLEND RATIO</h3>
+            </div>
+            <p class="lore-desc">
+              True South Indian Degree Coffee cannot be created with 100% coffee beans alone. Our time-honored formula blends:
+            </p>
+            <div class="ratio-breakdown">
+              <div class="ratio-box">
+                <span class="ratio-num">80%</span>
+                <span class="ratio-label">Select Arabica & Robusta</span>
+                <p class="ratio-text">Hand-picked highland beans delivering pure caffeine punch, sweet cocoa notes, and rich fragrance.</p>
+              </div>
+              <div class="ratio-box">
+                <span class="ratio-num">20%</span>
+                <span class="ratio-label">Roasted French Chicory</span>
+                <p class="ratio-text">Imparts that legendary velvety thickness, deep amber hue, and natural caramelized softness to the decoction.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- EXTRA CONTENT: BEAN-TO-CUP EXCELLENCE TIMELINE           -->
+        <!-- ======================================================== -->
+        <div class="bean-journey-section">
+          <div class="journey-header">
+            <div class="gold-eyebrow">
+              <span class="eyebrow-line"></span>
+              <span class="eyebrow-text">FARM TO FILTER</span>
+              <span class="eyebrow-line"></span>
+            </div>
+            <h3 class="journey-title">THE 5-STAGE TEMPLEBREW CRAFT</h3>
+          </div>
+          <div class="journey-steps-grid">
+            <div class="j-step-card">
+              <span class="j-num">01</span>
+              <h4 class="j-name">HIGHLAND SHADE SOURCING</h4>
+              <p class="j-desc">Hand-picked ripe cherries from 1,100m&ndash;1,450m elevation in Chikmagalur & Bababudangiri hills.</p>
+            </div>
+            <div class="j-step-card">
+              <span class="j-num">02</span>
+              <h4 class="j-name">ARTISANAL DRUM ROAST</h4>
+              <p class="j-desc">Slow-fired in small cast-iron drums at 215&deg;C for 16 minutes to caramelize natural bean sugars.</p>
+            </div>
+            <div class="j-step-card">
+              <span class="j-num">03</span>
+              <h4 class="j-name">FRENCH CHICORY BLEND</h4>
+              <p class="j-desc">Balanced with 20% roasted chicory to yield our signature velvety South Indian decoction thickness.</p>
+            </div>
+            <div class="j-step-card">
+              <span class="j-num">04</span>
+              <h4 class="j-name">MICRON-CALIBRATED MILL</h4>
+              <p class="j-desc">Ground to custom medium-fine consistency strictly engineered for brass filter percolation.</p>
+            </div>
+            <div class="j-step-card">
+              <span class="j-num">05</span>
+              <h4 class="j-name">AROMA-BARRIER SEAL</h4>
+              <p class="j-desc">Immediately packed in multi-layer gas-barrier pouches to lock in delicate volatile coffee oils.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- EXTRA CONTENT: DECOCTION DENSITY & CUP STRENGTH MATRIX    -->
+        <!-- ======================================================== -->
+        <div class="strength-matrix-grid">
+          <div class="strength-card">
+            <span class="strength-badge">MILD & AROMATIC</span>
+            <h4 class="strength-title">MORNING LIGHT KAAPI</h4>
+            <div class="strength-ratio">35% Decoction : 65% Boiled Milk</div>
+            <p class="strength-desc">Light and gentle on the palate. Emphasizes sweet caramel notes and delicate floral aroma without overpowering caffeine bitterness.</p>
+          </div>
+
+          <div class="strength-card">
+            <span class="strength-badge">RECOMMENDED &bull; SIGNATURE</span>
+            <h4 class="strength-title">AUTHENTIC DEGREE KAAPI</h4>
+            <div class="strength-ratio">50% Decoction : 50% Boiled Milk</div>
+            <p class="strength-desc">The golden standard of temple towns. Rich, syrupy decoction blended with hot, frothy unadulterated milk for a velvety, long-lasting aftertaste.</p>
+          </div>
+
+          <div class="strength-card">
+            <span class="strength-badge">INTENSE & BOLD</span>
+            <h4 class="strength-title">TEMPLE TOWN STRONG</h4>
+            <div class="strength-ratio">65% Decoction : 35% Boiled Milk</div>
+            <p class="strength-desc">Deep roasted character with high body and powerful caffeine kick. Designed for hardcore filter coffee purists who savor dense, dark decoction.</p>
+          </div>
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- EXTRA CONTENT: KAAPI CONNOISSEUR TESTIMONIALS            -->
+        <!-- ======================================================== -->
+        <div class="testimonials-strip">
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"Takes me straight back to my grandmother's house in Srirangam. The aroma fills the entire house the minute the decoction drips."</p>
+            <span class="testi-author">&mdash; Sundararajan V., Chennai</span>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"Kumbakonam degree kaapi has always been my benchmark. TEMPLEBREW hits the exact thickness and golden froth in a brass dabara."</p>
+            <span class="testi-author">&mdash; Meenakshi R., Bangalore</span>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"The packaging artwork is gorgeous and the coffee inside is 100% authentic temple town taste. Ordering via WhatsApp is super fast!"</p>
+            <span class="testi-author">&mdash; Karthik S., Tiruchirappalli</span>
+          </div>
+        </div>
+
+        <!-- Trust Strip -->
+        <div class="product-trust-strip">
+          <div class="trust-item">
+            <i data-lucide="shield-check" class="trust-icon"></i>
+            <span>FSSAI Certified: 12423999001234</span>
+          </div>
+          <div class="trust-item">
+            <i data-lucide="truck" class="trust-icon"></i>
+            <span>Freshly Packed & Dispatched Direct from Srirangam</span>
+          </div>
+          <div class="trust-item">
+            <i data-lucide="award" class="trust-icon"></i>
+            <span>100% Traditional Temple Town Recipe</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="slide-divider-line">
+
+    <!-- ========================================== -->
+    <!-- SLIDE 3: BRAND STORY & BRAND VALUES & BUY -->
+    <!-- ========================================== -->
+    <section id="slide-3" class="slide slide-story">
+      <div class="slide-container">
+        
+        <!-- Story Top Row: Atmospheric Heritage Imagery + Narrative -->
+        <div class="story-hero-grid">
+          <div class="story-visual-column">
+            <div class="temple-frame">
+              <img src="assets/images/srirangam_kaveri_heritage.jpg" alt="South Indian Temple Gopuram Heritage over Kaveri River" class="heritage-img">
+              <div class="frame-gold-border"></div>
+              <div class="frame-tag">SRIRANGAM • KUMBAKONAM</div>
+            </div>
+            <div class="beans-thumbnail-card">
+              <img src="assets/images/coffee_beans.jpg" alt="Carefully Selected Roasted Coffee Beans" class="beans-thumb">
+              <div class="thumb-caption">
+                <span>Slow-Roasting Craft</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="story-narrative-column">
+            <div class="gold-eyebrow">
+              <span class="eyebrow-line"></span>
+              <span class="eyebrow-text">TIMELESS TRADITION</span>
+              <span class="eyebrow-line"></span>
+            </div>
+            <h2 class="story-heading">THE HERITAGE OF EVERY CUP</h2>
+            
+            <div class="story-quote-box">
+              <p class="story-lead">
+                "Born from the rich tradition of South Indian filter coffee, TEMPLEBREW brings together carefully selected coffee beans, traditional roasting and the warmth of an authentic coffee experience."
+              </p>
+              <p class="story-body">
+                "Inspired by the heritage of temple towns, every cup celebrates tradition, aroma and flavour."
+              </p>
+              <p class="story-climax">
+                "We believe great coffee is not simply brewed. It is experienced."
+              </p>
+            </div>
+
+            <div class="heritage-pillars">
+              <div class="pillar-stat">
+                <span class="pillar-title">Srirangam</span>
+                <span class="pillar-sub">Bikshandarkoil Roots</span>
+              </div>
+              <div class="pillar-divider"></div>
+              <div class="pillar-stat">
+                <span class="pillar-title">Kumbakonam</span>
+                <span class="pillar-sub">Degree Kaapi Legacy</span>
+              </div>
+              <div class="pillar-divider"></div>
+              <div class="pillar-stat">
+                <span class="pillar-title">Purity</span>
+                <span class="pillar-sub">No Artificial Additives</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- BRAND CONTENT AS "IMAGE WORDS" (Visual Typographic Cards) -->
+        <!-- ======================================================== -->
+        <div class="brand-words-section">
+          <div class="section-header-center mb-8">
+            <div class="gold-eyebrow">
+              <span class="eyebrow-line"></span>
+              <span class="eyebrow-text">THE SACRED IDENTITY</span>
+              <span class="eyebrow-line"></span>
+            </div>
+            <h3 class="values-title">HERITAGE IN WORDS & VISUALS</h3>
+            <p class="section-desc">
+              Authentic slogans, traditional Tamil calligraphy, and brand ethos drawn directly from TEMPLEBREW packaging artwork.
+            </p>
+          </div>
+
+          <div class="brand-words-grid">
+            
+            <!-- Card 1: Srirangam Heritage Image Words -->
+            <div class="brand-word-card">
+              <img src="assets/images/brand_words/card_srirangam.jpg" alt="Sri Rangam Degree Coffee Heritage" class="bword-bg-img">
+              <div class="bword-overlay">
+                <span class="bword-tag">TEMPLE TOWN HERITAGE</span>
+                <h4 class="bword-ta">ஸ்ரீரங்கம் டிகிரி காபி</h4>
+                <h5 class="bword-en">SRI RANGAM DEGREE COFFEE</h5>
+                <p class="bword-quote">"A Legacy of Purity & Richness &bull; Brewed in the Temple Town"</p>
+                <div class="bword-footer">
+                  <span>80% Coffee : 20% Chicory</span>
+                  <a href="https://wa.me/918072435415?text=Hello%20TEMPLEBREW%2C%20I%20would%20like%20to%20order%20Sri%20Rangam%20Degree%20Coffee%20250g%20for%20%E2%82%B9250." target="_blank" rel="noopener noreferrer" class="bword-buy-btn">
+                    <span>Order ₹250</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Kumbakonam Degree Kaapi Image Words -->
+            <div class="brand-word-card">
+              <img src="assets/images/brand_words/card_kumbakonam.jpg" alt="Kumbakonam Degree Coffee" class="bword-bg-img">
+              <div class="bword-overlay">
+                <span class="bword-tag">AUTHENTIC DEGREE KAAPI</span>
+                <h4 class="bword-ta">கும்பகோணம் டிகிரி காபி</h4>
+                <h5 class="bword-en">KUMBAKONAM DEGREE COFFEE</h5>
+                <p class="bword-quote">"Strong Aroma &bull; Traditional Taste &bull; Double Roasted Heritage"</p>
+                <div class="bword-footer">
+                  <span>500 g Net Weight</span>
+                  <a href="https://wa.me/918072435415?text=Hello%20TEMPLEBREW%2C%20I%20would%20like%20to%20order%20Kumbakonam%20Degree%20Coffee%20500g%20for%20%E2%82%B9500." target="_blank" rel="noopener noreferrer" class="bword-buy-btn">
+                    <span>Order ₹500</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Slow Roasted Artisanal Perfection -->
+            <div class="brand-word-card">
+              <img src="assets/images/brand_words/card_slow_roasted.jpg" alt="Slow Roasted Coffee Beans" class="bword-bg-img">
+              <div class="bword-overlay">
+                <span class="bword-tag">ARTISANAL ROASTING</span>
+                <h4 class="bword-ta">பாரம்பரிய சுவை</h4>
+                <h5 class="bword-en">SLOW ROASTED TO PERFECTION</h5>
+                <p class="bword-quote">"We believe great coffee is not simply brewed. It is experienced."</p>
+                <div class="bword-footer">
+                  <span>Export Quality Roast</span>
+                  <a href="#slide-3-buy" class="bword-buy-btn">
+                    <span>Explore Blends</span> <i data-lucide="arrow-down" class="w-3.5 h-3.5"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Original Master Artwork -->
+            <div class="brand-word-card">
+              <img src="assets/images/brand_words/card_artwork.jpg" alt="TEMPLEBREW Packaging Artwork" class="bword-bg-img">
+              <div class="bword-overlay">
+                <span class="bword-tag">ORIGINAL PACKAGING ART</span>
+                <h4 class="bword-ta">தென்னிந்திய பில்டர் காபி</h4>
+                <h5 class="bword-en">TEMPLEBREW SIGNATURE</h5>
+                <p class="bword-quote">"Tradition Brewed to Perfection &bull; FSSAI Lic. 12423999001234"</p>
+                <div class="bword-footer">
+                  <span>Freshly Packed</span>
+                  <a href="https://wa.me/918072435415" target="_blank" rel="noopener noreferrer" class="bword-buy-btn">
+                    <span>Chat on WhatsApp</span> <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- EXTRA CONTENT: THE 4-STEP FILTER COFFEE BREWING RITUAL   -->
+        <!-- ======================================================== -->
+        <div class="brewing-ritual-section">
+          <div class="section-header-center">
+            <div class="gold-eyebrow">
+              <span class="eyebrow-line"></span>
+              <span class="eyebrow-text">HOW TO BREW THE PERFECT FILTER COFFEE</span>
+              <span class="eyebrow-line"></span>
+            </div>
+            <h3 class="section-title">THE SACRED KAAPI RITUAL</h3>
+            <p class="section-desc">
+              Extracted directly from the TEMPLEBREW packaging artwork guidelines for authentic, frothy degree kaapi.
+            </p>
+          </div>
+
+          <div class="ritual-grid">
+            
+            <div class="ritual-card">
+              <div class="ritual-num">01</div>
+              <h4 class="ritual-title">THE MEASURE</h4>
+              <p class="ritual-text">Add 1 to 2 heaped tablespoons of fresh TEMPLEBREW powder into the upper perforated cup of the brass filter.</p>
+              <span class="ritual-tip">Use freshly opened pack</span>
+            </div>
+
+            <div class="ritual-card">
+              <div class="ritual-num">02</div>
+              <h4 class="ritual-title">THE TAMP</h4>
+              <p class="ritual-text">Press the coffee powder lightly using the perforated umbrella pressing disc. Do not press too hard.</p>
+              <span class="ritual-tip">Ensures uniform extraction</span>
+            </div>
+
+            <div class="ritual-card">
+              <div class="ritual-num">03</div>
+              <h4 class="ritual-title">THE STEEP</h4>
+              <p class="ritual-text">Pour 50-60 ml of freshly boiled water over the disc. Close the brass lid and allow 5 to 7 minutes for thick decoction to collect.</p>
+              <span class="ritual-tip">Liquid gold decoction</span>
+            </div>
+
+            <div class="ritual-card">
+              <div class="ritual-num">04</div>
+              <h4 class="ritual-title">METER FROTH</h4>
+              <p class="ritual-text">Mix hot boiled milk and sugar. Pour between brass tumbler and dabara from a height to generate thick golden foam.</p>
+              <span class="ritual-tip">Authentic South Indian pour</span>
+            </div>
+
+          </div>
+
+          <!-- Supporting Photo Row: Brewing & Meter Kaapi -->
+          <div class="ritual-photo-row">
+            <div class="ritual-photo-box">
+              <img src="assets/images/brewing_filter_ritual.jpg" alt="Authentic Brass Coffee Filter Dripping Decoction" class="r-photo">
+              <div class="r-caption">
+                <span>The Brass Filter Dripping Thick Sacred Decoction</span>
+              </div>
+            </div>
+            <div class="ritual-photo-box">
+              <img src="assets/images/meter_kaapi_pour.jpg" alt="Meter Kaapi Pour Creating Golden Froth in Brass Dabara" class="r-photo">
+              <div class="r-caption">
+                <span>The Legendary Meter Kaapi Pour & Golden Froth</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- DIRECT BUY PRODUCTS SHOWCASE IN SLIDE 3                 -->
+        <!-- ======================================================== -->
+        <div class="slide3-buy-showcase" id="slide-3-buy">
+          <div class="buy-banner-card">
+            <div class="buy-banner-glow"></div>
+            
+            <div class="buy-header-row">
+              <div>
+                <span class="buy-pill-badge">DIRECT FROM TEMPLE TOWN</span>
+                <h3 class="buy-main-title">BUY AUTHENTIC TEMPLEBREW COFFEE</h3>
+                <p class="buy-subtitle">Order fresh, artisanal filter coffee roasted in Tiruchirappalli &bull; Direct WhatsApp Dispatch</p>
+              </div>
+              <div class="buy-fast-contact">
+                <i data-lucide="phone-call" class="w-5 h-5 text-warm-gold"></i>
+                <div>
+                  <span class="fast-label">Ordering Hotline:</span>
+                  <a href="tel:+918072435415" class="fast-num">80724 35415</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Four Instant Purchase Units with Selectable Weights -->
+            <div class="buy-items-grid">
+              
+              <!-- Buy Unit 1: Sri Rangam Degree Coffee -->
+              <div class="buy-item-card" data-buy-unit="srirangam_degree">
+                <div class="buy-item-thumb">
+                  <img src="assets/images/product_srirangam_cream.png" alt="Sri Rangam Degree Coffee" class="buy-thumb-img">
+                  <span class="buy-tag-save">₹50 OFF</span>
+                </div>
+                <div class="buy-item-details">
+                  <span class="buy-weight-label">250G PACK</span>
+                  <h4 class="buy-item-name">SRI RANGAM DEGREE COFFEE</h4>
+                  <p class="buy-item-desc">Rich aroma, traditional blend inspired by Srirangam's heritage. 80% Coffee, 20% Chicory.</p>
+
+                  <!-- Weight Selector -->
+                  <div class="product-weight-selector">
+                    <span class="weight-label-text">Select Weight:</span>
+                    <div class="weight-pills-group">
+                      <button type="button" class="weight-pill-btn active" data-product="srirangam_degree" data-weight="250g">
+                        <span class="pill-weight">250g</span>
+                        <span class="pill-price">₹250</span>
+                      </button>
+                      <button type="button" class="weight-pill-btn" data-product="srirangam_degree" data-weight="500g">
+                        <span class="pill-weight">500g</span>
+                        <span class="pill-price">₹500</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="buy-pricing-row">
+                    <span class="buy-strike">₹300</span>
+                    <span class="buy-price">₹250</span>
+                    <span class="buy-in-stock"><i data-lucide="check" class="w-3.5 h-3.5 text-green-400 inline"></i> Fresh Batch Ready</span>
+                  </div>
+
+                  <div class="buy-sub-actions">
+                    <a href="https://wa.me/918072435415?text=Hello%20TEMPLEBREW%2C%20I%20would%20like%20to%20order%20Srirangam%20Degree%20Coffee%20250g%20for%20%E2%82%B9250." target="_blank" rel="noopener noreferrer" class="btn-buy-whatsapp">
+                      <i data-lucide="message-circle" class="w-4 h-4 mr-1"></i>
+                      <span>BUY 250G VIA WHATSAPP (₹250)</span>
+                    </a>
+                    <button type="button" class="btn-add-cart" data-cart-btn="srirangam_degree">
+                      <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                      <span>ADD TO CART</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Buy Unit 2: Kumbakonam Degree Coffee -->
+              <div class="buy-item-card" data-buy-unit="kumbakonam_degree">
+                <div class="buy-item-thumb">
+                  <img src="assets/images/product_kumbakonam_cream.png" alt="Kumbakonam Degree Coffee" class="buy-thumb-img">
+                  <span class="buy-tag-save">₹50 OFF</span>
+                </div>
+                <div class="buy-item-details">
+                  <span class="buy-weight-label">250G PACK</span>
+                  <h4 class="buy-item-name">KUMBAKONAM DEGREE COFFEE</h4>
+                  <p class="buy-item-desc">Strong aroma, deep flavour, double-roasted perfection from Kumbakonam's coffee lore.</p>
+
+                  <!-- Weight Selector -->
+                  <div class="product-weight-selector">
+                    <span class="weight-label-text">Select Weight:</span>
+                    <div class="weight-pills-group">
+                      <button type="button" class="weight-pill-btn active" data-product="kumbakonam_degree" data-weight="250g">
+                        <span class="pill-weight">250g</span>
+                        <span class="pill-price">₹250</span>
+                      </button>
+                      <button type="button" class="weight-pill-btn" data-product="kumbakonam_degree" data-weight="500g">
+                        <span class="pill-weight">500g</span>
+                        <span class="pill-price">₹500</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="buy-pricing-row">
+                    <span class="buy-strike">₹300</span>
+                    <span class="buy-price">₹250</span>
+                    <span class="buy-in-stock"><i data-lucide="check" class="w-3.5 h-3.5 text-green-400 inline"></i> Fresh Batch Ready</span>
+                  </div>
+
+                  <div class="buy-sub-actions">
+                    <a href="https://wa.me/918072435415?text=Hello%20TEMPLEBREW%2C%20I%20would%20like%20to%20order%20Kumbakonam%20Degree%20Coffee%20250g%20for%20%E2%82%B9250." target="_blank" rel="noopener noreferrer" class="btn-buy-whatsapp">
+                      <i data-lucide="message-circle" class="w-4 h-4 mr-1"></i>
+                      <span>BUY 250G VIA WHATSAPP (₹250)</span>
+                    </a>
+                    <button type="button" class="btn-add-cart" data-cart-btn="kumbakonam_degree">
+                      <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                      <span>ADD TO CART</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Buy Unit 3: Sri Rangam Premium Blend -->
+              <div class="buy-item-card" data-buy-unit="srirangam_blend">
+                <div class="buy-item-thumb">
+                  <img src="assets/images/product_srirangam_maroon.png" alt="Sri Rangam Premium Blend" class="buy-thumb-img">
+                  <span class="buy-tag-save">₹50 OFF</span>
+                </div>
+                <div class="buy-item-details">
+                  <span class="buy-weight-label">250G PACK</span>
+                  <h4 class="buy-item-name">SRI RANGAM PREMIUM BLEND</h4>
+                  <p class="buy-item-desc">A legacy of purity & richness with slow-roasted beans and velvety decoction in royal maroon.</p>
+
+                  <!-- Weight Selector -->
+                  <div class="product-weight-selector">
+                    <span class="weight-label-text">Select Weight:</span>
+                    <div class="weight-pills-group">
+                      <button type="button" class="weight-pill-btn active" data-product="srirangam_blend" data-weight="250g">
+                        <span class="pill-weight">250g</span>
+                        <span class="pill-price">₹300</span>
+                      </button>
+                      <button type="button" class="weight-pill-btn" data-product="srirangam_blend" data-weight="500g">
+                        <span class="pill-weight">500g</span>
+                        <span class="pill-price">₹600</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="buy-pricing-row">
+                    <span class="buy-strike">₹350</span>
+                    <span class="buy-price">₹300</span>
+                    <span class="buy-in-stock"><i data-lucide="check" class="w-3.5 h-3.5 text-green-400 inline"></i> Fresh Batch Ready</span>
+                  </div>
+
+                  <div class="buy-sub-actions">
+                    <a href="https://wa.me/918072435415?text=Hello%20TEMPLEBREW%2C%20I%20would%20like%20to%20order%20Srirangam%20Premium%20Blend%20250g%20for%20%E2%82%B9300." target="_blank" rel="noopener noreferrer" class="btn-buy-whatsapp">
+                      <i data-lucide="message-circle" class="w-4 h-4 mr-1"></i>
+                      <span>BUY 250G VIA WHATSAPP (₹300)</span>
+                    </a>
+                    <button type="button" class="btn-add-cart" data-cart-btn="srirangam_blend">
+                      <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                      <span>ADD TO CART</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Buy Unit 4: Kumbakonam Premium Blend -->
+              <div class="buy-item-card" data-buy-unit="kumbakonam_blend">
+                <div class="buy-item-thumb">
+                  <img src="assets/images/product_kumbakonam_dark.png" alt="Kumbakonam Premium Blend" class="buy-thumb-img">
+                  <span class="buy-tag-save">₹50 OFF</span>
+                </div>
+                <div class="buy-item-details">
+                  <span class="buy-weight-label">250G PACK</span>
+                  <h4 class="buy-item-name">KUMBAKONAM PREMIUM BLEND</h4>
+                  <p class="buy-item-desc">Dark espresso reserve edition with intense aroma and bold roasted notes for authentic filter lovers.</p>
+
+                  <!-- Weight Selector -->
+                  <div class="product-weight-selector">
+                    <span class="weight-label-text">Select Weight:</span>
+                    <div class="weight-pills-group">
+                      <button type="button" class="weight-pill-btn active" data-product="kumbakonam_blend" data-weight="250g">
+                        <span class="pill-weight">250g</span>
+                        <span class="pill-price">₹300</span>
+                      </button>
+                      <button type="button" class="weight-pill-btn" data-product="kumbakonam_blend" data-weight="500g">
+                        <span class="pill-weight">500g</span>
+                        <span class="pill-price">₹600</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="buy-pricing-row">
+                    <span class="buy-strike">₹350</span>
+                    <span class="buy-price">₹300</span>
+                    <span class="buy-in-stock"><i data-lucide="check" class="w-3.5 h-3.5 text-green-400 inline"></i> Fresh Batch Ready</span>
+                  </div>
+
+                  <div class="buy-sub-actions">
+                    <a href="https://wa.me/918072435415?text=Hello%20TEMPLEBREW%2C%20I%20would%20like%20to%20order%20Kumbakonam%20Premium%20Blend%20250g%20for%20%E2%82%B9300." target="_blank" rel="noopener noreferrer" class="btn-buy-whatsapp">
+                      <i data-lucide="message-circle" class="w-4 h-4 mr-1"></i>
+                      <span>BUY 250G VIA WHATSAPP (₹300)</span>
+                    </a>
+                    <button type="button" class="btn-add-cart" data-cart-btn="kumbakonam_blend">
+                      <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                      <span>ADD TO CART</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Authentic Packaging Dieline Art Reveal Gallery -->
+            <div class="dieline-art-gallery">
+              <h4 class="gallery-title">AUTHENTIC PACKAGING ARTWORK (FULL DIELINES)</h4>
+              <p class="gallery-subtitle">Click to inspect the complete packaging artwork created for TEMPLEBREW:</p>
+              
+              <div class="dieline-grid">
+                <div class="dieline-card" onclick="window.TempleBrewModal.open('srirangam_cream')">
+                  <img src="assets/raw/srirangam_cream_dieline.jpg" alt="Sri Rangam Degree Coffee Full Packaging Dieline" class="dieline-img">
+                  <div class="dieline-card-overlay">
+                    <span>Sri Rangam Full Dieline Artwork &bull; View 3D</span>
+                  </div>
+                </div>
+
+                <div class="dieline-card" onclick="window.TempleBrewModal.open('kumbakonam_cream')">
+                  <img src="assets/raw/kumbakonam_cream_dieline.jpg" alt="Kumbakonam Degree Coffee Full Packaging Dieline" class="dieline-img">
+                  <div class="dieline-card-overlay">
+                    <span>Kumbakonam Full Dieline Artwork &bull; View 3D</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 6 Animated Brand Value Cards -->
+        <div class="values-section-wrap">
+          <div class="section-header-center mb-6">
+            <div class="gold-eyebrow">
+              <span class="eyebrow-line"></span>
+              <span class="eyebrow-text">UNCOMPROMISING QUALITY</span>
+              <span class="eyebrow-line"></span>
+            </div>
+            <h3 class="values-title">OUR PILLARS OF EXCELLENCE</h3>
+            <p class="section-desc">Six non-negotiable standards that define every batch of TEMPLEBREW filter coffee.</p>
+          </div>
+          
+          <div class="values-grid">
+            
+            <!-- Value 1: QUALITY BEANS -->
+            <div class="value-card" data-val-index="1">
+              <div class="value-icon-box">
+                <i data-lucide="coffee" class="value-icon"></i>
+              </div>
+              <h4 class="value-name">QUALITY BEANS</h4>
+              <p class="value-desc">Carefully selected coffee beans grown at optimal elevations for unmatched body, natural sweetness, and complex aroma.</p>
+              <div class="value-spec-list">
+                <span class="v-spec-item"><span class="v-spec-bullet">&bull;</span> <strong>Elevation:</strong> 1,100m &ndash; 1,450m Western Ghats</span>
+                <span class="v-spec-item"><span class="v-spec-bullet">&bull;</span> <strong>Grade:</strong> AAA Plantation Arabica &amp; Screen 19 Cherry</span>
+                <span class="v-spec-item"><span class="v-spec-bullet">&bull;</span> <strong>Selection:</strong> 100% hand-sorted ripe cherries</span>
+              </div>
+              <span class="value-quality-seal"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Grade AAA Shade Grown</span>
+              <div class="value-card-gold-glow"></div>
+            </div>
+
+            <!-- Value 2: SLOW ROASTED -->
+            <div class="value-card" data-val-index="2">
+              <div class="value-icon-box">
+                <i data-lucide="flame" class="value-icon"></i>
+              </div>
+              <h4 class="value-name">SLOW ROASTED</h4>
+              <p class="value-desc">Roasted with care in artisanal small batches using traditional drum roasters to unlock deep caramelized flavour profiles.</p>
+              <div class="value-spec-list">
+                <span class="v-spec-item"><span class="v-spec-bullet">&bull;</span> <strong>Roast Curve:</strong> 215&deg;C controlled gradual profile</span>
+                <span class="v-spec-item"><span class="v-spec-bullet">&bull;</span> <strong>Batch Size:</strong> Micro-batch drum roasted</span>
+                <span class="v-spec-item"><span class="v-spec-bullet">&bull;</span> <strong>Caramelization:</strong> Zero charring &bull; Rich cocoa finish</span>
+              </div>
+              <span class="value-quality-seal"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> 215&deg;C Cast-Iron Drum Roast</span>
+              <div class="value-card-gold-glow"></div>
+            </div>
+
+            <!-- Value 3: RICH AROMA -->
+            <div class="value-card" data-val-index="3">
+              <div class="value-icon-box">
+                <i data-lucide="wind" class="value-icon"></i>
+              </div>
+              <h4 class="value-name">RICH AROMA</h4>
+              <p class="value-desc">An unforgettable, intoxicating aroma in every cup that revives traditional South Indian temple town mornings.</p>
+              <div class="value-spec-list">
+                <span class="v-spec-item"><span class="v-spec-bullet">&bull;</span> <strong>Fragrance Profile:</strong> Roasted hazelnut, dark chocolate</span>
+                <span class="v-spec-item"><span class="v-spec-bullet">&bull;</span> <strong>Cool Milling:</strong> Prevents heat degradation of oils</span>
+                <span class="v-spec-item"><span class="v-spec-bullet">&bull;</span> <strong>Aroma Retention:</strong> 99.4% sealed volatile furans</span>
+              </div>
+              <span class="value-quality-seal"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> 9.8 / 10 Cupping Aroma Score</span>
+              <div class="value-card-gold-glow"></div>
+            </div>
+
+            <!-- Value 4: TRADITIONAL TASTE -->
+            <div class="value-card" data-val-index="4">
+              <div class="value-icon-box">
+                <i data-lucide="cup-soda" class="value-icon"></i>
+              </div>
+              <h4 class="value-name">TRADITIONAL TASTE</h4>
+              <p class="value-desc">Inspired by authentic South Indian filter coffee with the signature golden froth, full body, and velvety decoction.</p>
+              <div class="value-spec-list">
+                <span class="v-spec-item"><span class="v-spec-bullet">&bull;</span> <strong>Blend Formula:</strong> 80% Coffee : 20% French Chicory</span>
+                <span class="v-spec-item"><span class="v-spec-bullet">&bull;</span> <strong>Decoction Density:</strong> 18&deg; Brix heavy syrupy extraction</span>
+                <span class="v-spec-item"><span class="v-spec-bullet">&bull;</span> <strong>Crema:</strong> Golden, dense foam in brass dabara</span>
+              </div>
+              <span class="value-quality-seal"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Authentic Degree Decoction</span>
+              <div class="value-card-gold-glow"></div>
+            </div>
+
+            <!-- Value 5: HERITAGE -->
+            <div class="value-card" data-val-index="5">
+              <div class="value-icon-box">
+                <i data-lucide="landmark" class="value-icon"></i>
+              </div>
+              <h4 class="value-name">HERITAGE</h4>
+              <p class="value-desc">Inspired by the coffee traditions of sacred temple towns like Srirangam and Kumbakonam passed through generations.</p>
+              <div class="value-spec-list">
+                <span class="v-spec-item"><span class="v-spec-bullet">&bull;</span> <strong>Roots:</strong> Bikshandarkoil, Srirangam &amp; Kumbakonam</span>
+                <span class="v-spec-item"><span class="v-spec-bullet">&bull;</span> <strong>Heritage Masters:</strong> Multi-generational roast craft</span>
+                <span class="v-spec-item"><span class="v-spec-bullet">&bull;</span> <strong>Integrity:</strong> Zero shortcuts &bull; Traditional filter grind</span>
+              </div>
+              <span class="value-quality-seal"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Centuries-Old Temple Tradition</span>
+              <div class="value-card-gold-glow"></div>
+            </div>
+
+            <!-- Value 6: PREMIUM EXPERIENCE -->
+            <div class="value-card" data-val-index="6">
+              <div class="value-icon-box">
+                <i data-lucide="crown" class="value-icon"></i>
+              </div>
+              <h4 class="value-name">PREMIUM EXPERIENCE</h4>
+              <p class="value-desc">Crafted for coffee connoisseurs who cherish perfection, dignity and uncompromising quality in every single sip.</p>
+              <div class="value-spec-list">
+                <span class="v-spec-item"><span class="v-spec-bullet">&bull;</span> <strong>Packaging:</strong> Multi-layer aroma protection pouch</span>
+                <span class="v-spec-item"><span class="v-spec-bullet">&bull;</span> <strong>Certification:</strong> FSSAI Lic. 12423999001234</span>
+                <span class="v-spec-item"><span class="v-spec-bullet">&bull;</span> <strong>Freshness:</strong> Dispatched direct within 48h of roast</span>
+              </div>
+              <span class="value-quality-seal"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> 100% Purity Certified Guarantee</span>
+              <div class="value-card-gold-glow"></div>
+            </div>
+
+          </div>
+
+          <!-- Excellence Quality Index & Lab Standards Strip -->
+          <div class="excellence-audit-banner">
+            <div class="audit-item">
+              <i data-lucide="mountain" class="audit-icon"></i>
+              <div>
+                <span class="audit-label">SHADE ELEVATION</span>
+                <span class="audit-val">1,250m+ Altitude</span>
+              </div>
+            </div>
+            <div class="audit-item">
+              <i data-lucide="flame" class="audit-icon"></i>
+              <div>
+                <span class="audit-label">ROAST PROFILE</span>
+                <span class="audit-val">215&deg;C Slow Drum</span>
+              </div>
+            </div>
+            <div class="audit-item">
+              <i data-lucide="droplet" class="audit-icon"></i>
+              <div>
+                <span class="audit-label">DECOCTION DENSITY</span>
+                <span class="audit-val">18&deg; Brix Viscosity</span>
+              </div>
+            </div>
+            <div class="audit-item">
+              <i data-lucide="award" class="audit-icon"></i>
+              <div>
+                <span class="audit-label">PURITY AUDIT</span>
+                <span class="audit-val">100% Pure &amp; FSSAI Licensed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="slide-divider-line">
+
+    <!-- ========================================== -->
+    <!-- SLIDE 4: CONTACT, LOCATION & FOOTER       -->
+    <!-- ========================================== -->
+    <section id="slide-4" class="slide slide-contact">
+      <div class="slide-container">
+        
+        <!-- Section Header -->
+        <div class="section-header-center">
+          <div class="gold-eyebrow">
+            <span class="eyebrow-line"></span>
+            <span class="eyebrow-text">CONNECT & VISIT US</span>
+            <span class="eyebrow-line"></span>
+          </div>
+          <h2 class="section-title">VISIT TEMPLEBREW</h2>
+          <p class="section-subtitle">"From Our Coffee Tradition to Your Cup"</p>
+          <p class="section-desc">
+            Visit our experience roastery near sacred Srirangam or order fresh batches delivered straight to your doorstep across India.
+          </p>
+        </div>
+
+        <!-- Contact & Map & Form 3-Column Grid -->
+        <div class="contact-main-grid">
+          
+          <!-- Column 1: Contact Details -->
+          <div class="contact-info-panel">
+            <div class="company-badge-header">
+              <div class="badge-icon-wrap">
+                <i data-lucide="map-pin" class="text-warm-gold"></i>
+              </div>
+              <div>
+                <h3 class="company-title">TEMPLEBREW</h3>
+                <span class="company-sub">TEMPLEBREW AGRO FOODS</span>
+              </div>
+            </div>
+
+            <!-- Address Card -->
+            <div class="info-block">
+              <div class="info-icon"><i data-lucide="map-pin"></i></div>
+              <div class="info-content">
+                <span class="info-label">Address</span>
+                <address class="info-text not-italic">
+                  6/2595, Chennai Bypass Bridge, NH-45, Bikshandarkoil, Near Srirangam, Tiruchirappalli – 621216, Tamil Nadu, India
+                </address>
+              </div>
+            </div>
+
+            <!-- Clickable Phone -->
+            <div class="info-block">
+              <div class="info-icon"><i data-lucide="phone-call"></i></div>
+              <div class="info-content">
+                <span class="info-label">Telephone / Ordering Line</span>
+                <a href="tel:+918072435415" class="info-link text-gold-hover">
+                  80724 35415
+                </a>
+              </div>
+            </div>
+
+            <!-- Clickable Email -->
+            <div class="info-block">
+              <div class="info-icon"><i data-lucide="mail"></i></div>
+              <div class="info-content">
+                <span class="info-label">Official Email</span>
+                <a href="mailto:info.templebrew@gmail.com" class="info-link text-gold-hover">
+                  info.templebrew@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <!-- Official Website -->
+            <div class="info-block">
+              <div class="info-icon"><i data-lucide="globe"></i></div>
+              <div class="info-content">
+                <span class="info-label">Website</span>
+                <a href="https://templebrew.in" class="info-link text-gold-hover">
+                  https://templebrew.in
+                </a>
+              </div>
+            </div>
+
+            <!-- Operating Hours & Tasting Bar -->
+            <div class="info-block">
+              <div class="info-icon"><i data-lucide="clock"></i></div>
+              <div class="info-content">
+                <span class="info-label">Tasting Bar & Store Hours</span>
+                <span class="info-text">Monday &ndash; Sunday: 7:00 AM &ndash; 8:30 PM</span>
+              </div>
+            </div>
+
+            <!-- Contact Action CTAs -->
+            <div class="contact-actions-row">
+              <a href="https://www.google.com/maps/search/?api=1&query=6%2F2595%2C+Chennai+Bypass+Bridge%2C+NH-45%2C+Bikshandarkoil%2C+Near+Srirangam%2C+Tiruchirappalli+-+621216" target="_blank" rel="noopener noreferrer" class="btn-directions">
+                <i data-lucide="navigation" class="w-4 h-4"></i>
+                <span>GET DIRECTIONS</span>
+              </a>
+              <a href="https://wa.me/918072435415?text=Hello%20TEMPLEBREW%2C%20I%20would%20like%20to%20inquire%20about%20ordering%20your%20filter%20coffee." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-direct">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>WHATSAPP US</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2: Embedded Google Map -->
+          <div class="map-container-card">
+            <div class="map-frame-header">
+              <div class="map-live-status">
+                <span class="status-dot"></span>
+                <span>Near Srirangam, Tiruchirappalli</span>
+              </div>
+              <a href="https://www.google.com/maps/search/?api=1&query=6%2F2595%2C+Chennai+Bypass+Bridge%2C+NH-45%2C+Bikshandarkoil%2C+Near+Srirangam%2C+Tiruchirappalli+-+621216" target="_blank" rel="noopener noreferrer" class="map-external-link">
+                <span>View Full Map</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+            
+            <div class="map-iframe-wrapper">
+              <iframe
+                title="TEMPLEBREW Location Map"
+                src="https://maps.google.com/maps?q=6%2F2595%2C+Chennai+Bypass+Bridge%2C+NH-45%2C+Bikshandarkoil%2C+Near+Srirangam%2C+Tiruchirappalli+621216&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+            
+            <div class="map-caption">
+              <i data-lucide="info" class="w-4 h-4 text-warm-gold inline mr-1"></i>
+              Conveniently located off NH-45 Chennai Bypass Bridge near sacred Srirangam. Free parking & fresh tasting bar on site.
+            </div>
+          </div>
+
+          <!-- Column 3: Quick Batch Order & Inquiry Form -->
+          <div class="inquiry-form-card">
+            <div class="inquiry-header">
+              <i data-lucide="send" class="w-5 h-5 text-warm-gold"></i>
+              <h3 class="inquiry-title">QUICK ORDER DISPATCH</h3>
+            </div>
+            <p class="inquiry-subtitle">Send your order directly to our dispatch desk via WhatsApp:</p>
+
+            <form id="quickOrderForm" class="inquiry-form" onsubmit="event.preventDefault(); window.TempleBrewSubmitOrder();">
+              <div class="form-group">
+                <label for="orderName" class="form-label">Your Full Name:</label>
+                <input type="text" id="orderName" class="form-input" placeholder="e.g. Ramesh Kumar" required>
+              </div>
+
+              <div class="form-group">
+                <label for="orderBlend" class="form-label">Select Blend & Quantity:</label>
+                <select id="orderBlend" class="form-select">
+                  <option value="Sri Rangam Degree Coffee 250g (₹250)">Sri Rangam Degree Coffee 250g - ₹250</option>
+                  <option value="Kumbakonam Degree Coffee 500g (₹500)">Kumbakonam Degree Coffee 500g - ₹500</option>
+                  <option value="Temple Combo: 250g + 500g (₹750)">Temple Combo Pack: 250g + 500g (₹750)</option>
+                  <option value="Wholesale Batch (1kg+) Inquiries">Wholesale / Café Supply (1kg+)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="orderCity" class="form-label">Delivery City / Address:</label>
+                <input type="text" id="orderCity" class="form-input" placeholder="e.g. Trichy / Chennai / Bangalore" required>
+              </div>
+
+              <button type="submit" class="btn-submit-order">
+                <i data-lucide="message-circle" class="w-4 h-4 mr-2"></i>
+                <span>SEND ORDER TO WHATSAPP</span>
+              </button>
+              <span class="order-notice">Instant confirmation & tracking via 80724 35415</span>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- EXTRA CONTENT: FREQUENTLY ASKED QUESTIONS (FAQ)          -->
+        <!-- ======================================================== -->
+        <div class="faq-section">
+          <div class="section-header-center mb-8">
+            <h3 class="section-title">FREQUENTLY ASKED QUESTIONS</h3>
+            <p class="section-desc">Everything you need to know about TEMPLEBREW degree coffee.</p>
+          </div>
+
+          <div class="faq-grid">
+            <div class="faq-item">
+              <h4 class="faq-q"><i data-lucide="help-circle" class="w-4 h-4 text-warm-gold inline mr-2"></i> What makes TEMPLEBREW Degree Coffee special?</h4>
+              <p class="faq-a">Our coffee is slow-roasted in artisanal batches following the heritage recipe of temple towns like Srirangam and Kumbakonam. We use 80% highland coffee beans and 20% select French chicory to create the thick, aromatic decoction that authentic filter kaapi is renowned for.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4 class="faq-q"><i data-lucide="help-circle" class="w-4 h-4 text-warm-gold inline mr-2"></i> What does "Degree Coffee" mean?</h4>
+              <p class="faq-a">In South Indian coffee lore, "Degree" originally referred to using pure, unadulterated cow's milk tested with a lactometer (degree), and brewing with first-degree decoction (the thickest, purest first percolation dripping through the brass filter).</p>
+            </div>
+
+            <div class="faq-item">
+              <h4 class="faq-q"><i data-lucide="help-circle" class="w-4 h-4 text-warm-gold inline mr-2"></i> How should I store the coffee powder?</h4>
+              <p class="faq-a">Keep the pack tightly closed after opening, or transfer into an airtight brass, stainless steel, or glass container away from direct sunlight and moisture. This keeps the aroma fresh for up to 12 months.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4 class="faq-q"><i data-lucide="help-circle" class="w-4 h-4 text-warm-gold inline mr-2"></i> Do you ship across Tamil Nadu and India?</h4>
+              <p class="faq-a">Yes! We pack fresh roasts daily at our Bikshandarkoil roastery near Srirangam and dispatch directly via courier across India. You can order easily through WhatsApp at 80724 35415.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="luxury-footer">
+          <div class="footer-divider-ornament">
+            <span class="ornament-line"></span>
+            <span class="ornament-diamond">◆</span>
+            <span class="ornament-line"></span>
+          </div>
+
+          <div class="footer-main-content">
+            <div class="footer-brand-col">
+              <div class="footer-logo">
+                <span class="brand-title">TEMPLEBREW</span>
+                <span class="brand-subtitle">SOUTH INDIAN FILTER COFFEE</span>
+              </div>
+              <p class="footer-tagline">"Tradition Brewed to Perfection"</p>
+              <p class="footer-bio">
+                Inspired by the authentic coffee heritage of temple towns like Srirangam and Kumbakonam. Bringing slow roasting, rich aroma and timeless taste to coffee lovers worldwide.
+              </p>
+            </div>
+
+            <div class="footer-links-col">
+              <span class="footer-col-title">NAVIGATION</span>
+              <ul class="footer-nav-list">
+                <li><a href="#slide-1" class="footer-link">Home</a></li>
+                <li><a href="#slide-2" class="footer-link">Our Coffee</a></li>
+                <li><a href="#slide-3" class="footer-link">Our Story & Buy</a></li>
+                <li><a href="#slide-4" class="footer-link">Visit & Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-products-col">
+              <span class="footer-col-title">BLENDS</span>
+              <ul class="footer-nav-list">
+                <li><a href="#slide-2" class="footer-link">Sri Rangam Degree Coffee (250g)</a></li>
+                <li><a href="#slide-2" class="footer-link">Kumbakonam Degree Coffee (500g)</a></li>
+                <li><a href="#slide-2" class="footer-link">Royal Maroon Heritage Edition</a></li>
+                <li><a href="#slide-2" class="footer-link">Dark Roast Reserve Edition</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-contact-col">
+              <span class="footer-col-title">DIRECT CONNECT</span>
+              <p class="footer-phone"><a href="tel:+918072435415">Phone: 80724 35415</a></p>
+              <p class="footer-email"><a href="mailto:info.templebrew@gmail.com">Email: info.templebrew@gmail.com</a></p>
+              <p class="footer-domain"><a href="https://templebrew.in">Domain: templebrew.in</a></p>
+              <div class="fssai-stamp">
+                <span class="fssai-label">FSSAI Lic. No:</span>
+                <span class="fssai-val">12423999001234</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom-row">
+            <p class="copyright-text">
+              &copy; 2026 <a href="https://templebrew.in" class="hover:text-warm-gold">TEMPLEBREW</a>. All Rights Reserved.
+            </p>
+            <p class="footer-origin">
+              Brewed in the Temple Town &bull; Made with pride in Tamil Nadu, India.
+            </p>
+          </div>
+        </footer>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- 3D PRODUCT INSPECTOR MODAL                -->
+  <!-- ========================================== -->
+  <div id="productModal" class="product-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-box-card">
+      <button id="modalCloseBtn" class="modal-close-button" aria-label="Close Inspector">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div class="modal-body-grid">
+        <!-- 3D Canvas Area -->
+        <div class="modal-3d-stage">
+          <div id="modal3dCanvasContainer" class="modal-canvas-wrap"></div>
+          
+          <div class="modal-3d-toolbar">
+            <span class="toolbar-hint"><i data-lucide="rotate-3d" class="w-3.5 h-3.5 inline mr-1 text-warm-gold"></i> Drag to inspect all packaging faces</span>
+            <div class="modal-angle-btns">
+              <button class="angle-btn active" data-angle="front">Front</button>
+              <button class="angle-btn" data-angle="story">Brand Story</button>
+              <button class="angle-btn" data-angle="back">Nutrition</button>
+              <button class="angle-btn" data-angle="brew">How to Brew</button>
+              <button class="angle-btn" data-angle="top">Top</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Details Column -->
+        <div class="modal-info-stage">
+          <div class="modal-product-header">
+            <span class="modal-brand-tag">TEMPLEBREW AUTHENTIC PACKAGING</span>
+            <h2 id="modalProductTitle" class="modal-title">TEMPLEBREW SRI RANGAM DEGREE COFFEE</h2>
+            <div class="modal-price-wrap">
+              <span id="modalOrigPrice" class="modal-orig-price">₹300</span>
+              <span id="modalSellPrice" class="modal-sell-price">₹250</span>
+              <span class="modal-offer-badge">₹50 OFF</span>
+            </div>
+          </div>
+
+          <!-- Modal Weight Variations Selector -->
+          <div class="modal-weight-selector">
+            <span class="modal-weight-label">Select Package Size:</span>
+            <div class="modal-weight-pills">
+              <button type="button" class="modal-weight-btn active" data-weight="250g">
+                <span class="modal-pill-wt">250g Pack</span>
+              </button>
+              <button type="button" class="modal-weight-btn" data-weight="500g">
+                <span class="modal-pill-wt">500g Family Pack</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="modal-specs-table">
+            <div class="spec-row">
+              <span class="spec-k">Net Quantity:</span>
+              <span id="modalWeight" class="spec-v">250 g</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-k">Blend Ratio:</span>
+              <span class="spec-v">80% Coffee, 20% Chicory</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-k">Roast Level:</span>
+              <span id="modalRoast" class="spec-v">Traditional Slow Roasted</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-k">FSSAI Lic. No:</span>
+              <span class="spec-v">12423999001234</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-k">Packaging Material:</span>
+              <span class="spec-v">Multi-layer Aroma Protection Cartridge</span>
+            </div>
+          </div>
+
+          <div class="modal-desc-box">
+            <h4 class="modal-section-title">ABOUT THIS BLEND</h4>
+            <p id="modalProductDesc" class="modal-desc-text">
+              "A rich and aromatic traditional South Indian filter coffee blend inspired by the timeless coffee heritage of Srirangam."
+            </p>
+          </div>
+
+          <div class="modal-brew-box">
+            <h4 class="modal-section-title">TRADITIONAL BREWING GUIDE</h4>
+            <ol class="brew-steps-list">
+              <li>Add 1-2 tbsp of TEMPLEBREW powder into the upper cup of filter.</li>
+              <li>Press lightly with disc and pour 50 ml hot boiling water.</li>
+              <li>Allow 5-7 mins for rich, thick decoction to collect below.</li>
+              <li>Mix with hot frothy boiled milk and sugar to taste. Serve in brass tumbler!</li>
+            </ol>
+          </div>
+
+          <div class="modal-actions-box">
+            <div class="modal-actions-grid">
+              <a id="modalWhatsAppBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn-gold-primary text-center py-3.5">
+                <i data-lucide="message-circle" class="w-4 h-4 mr-2 inline"></i>
+                <span>CONFIRM ORDER ON WHATSAPP</span>
+              </a>
+              <button id="modalAddToCartBtn" type="button" class="btn-modal-cart text-center py-3.5">
+                <i data-lucide="shopping-bag" class="w-4 h-4 mr-2 inline"></i>
+                <span>ADD TO CART</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- SHOPPING CART & CHECKOUT DRAWER                          -->
+  <!-- ======================================================== -->
+  <div id="cartDrawerBackdrop" class="cart-backdrop" aria-hidden="true"></div>
+
+  <aside id="cartDrawer" class="cart-drawer" aria-labelledby="cartDrawerTitle" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="cart-drawer-header">
+      <div class="cart-header-title-wrap">
+        <i data-lucide="shopping-bag" class="w-5 h-5 text-warm-gold"></i>
+        <h3 id="cartDrawerTitle" class="cart-header-title">YOUR COFFEE CART</h3>
+        <span id="cartHeaderCount" class="cart-header-badge">0 items</span>
+      </div>
+      <button id="closeCartBtn" class="cart-close-btn" aria-label="Close Shopping Cart">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <!-- Cart Notification Toast Banner -->
+    <div id="cartToast" class="cart-toast" role="status" aria-live="polite"></div>
+
+    <!-- Cart Body: Items List or Empty State -->
+    <div class="cart-drawer-body">
+      <!-- Empty State -->
+      <div id="cartEmptyState" class="cart-empty-state">
+        <div class="empty-cart-icon">
+          <i data-lucide="shopping-bag" class="w-12 h-12 text-warm-gold"></i>
+        </div>
+        <h4 class="empty-cart-title">Your Cart is Empty</h4>
+        <p class="empty-cart-desc">Experience the heritage of South Indian filter coffee. Select your favorite blend and weight above.</p>
+        <a href="#slide-2" class="btn-explore-coffee-cart" onclick="window.TempleBrewCart.closeCart()">
+          <span>EXPLORE OUR COFFEE</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <!-- Active Items List -->
+      <div id="cartItemsList" class="cart-items-list"></div>
+    </div>
+
+    <!-- Cart Footer & Checkout Panel -->
+    <div id="cartFooterPanel" class="cart-drawer-footer">
+      <div class="cart-summary-card">
+        <div class="summary-line">
+          <span class="summary-label">Items Subtotal:</span>
+          <span id="cartSubtotal" class="summary-val">₹0</span>
+        </div>
+        <div class="summary-line">
+          <span class="summary-label">Fresh Roast Dispatch:</span>
+          <span class="summary-val text-green-400">FREE</span>
+        </div>
+        <div class="summary-divider"></div>
+        <div class="summary-line total-line">
+          <span class="summary-label">Estimated Total:</span>
+          <span id="cartTotalAmount" class="summary-total-val">₹0</span>
+        </div>
+      </div>
+
+      <!-- Quick Checkout Information Form -->
+      <div class="cart-checkout-form">
+        <h4 class="checkout-form-title">
+          <i data-lucide="truck" class="w-4 h-4 text-warm-gold inline mr-1"></i>
+          <span>Delivery Details (for WhatsApp Dispatch)</span>
+        </h4>
+        <div class="checkout-fields-grid">
+          <div class="field-wrap">
+            <input type="text" id="custName" class="checkout-input" placeholder="Your Full Name *" required autocomplete="name">
+          </div>
+          <div class="field-wrap">
+            <input type="tel" id="custPhone" class="checkout-input" placeholder="WhatsApp / Mobile Number *" required autocomplete="tel">
+          </div>
+          <div class="field-wrap full-width">
+            <textarea id="custAddress" class="checkout-input checkout-textarea" rows="2" placeholder="Delivery Address & Pincode (e.g., Door No., Street, City, Pincode) *" required></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Checkout Action Buttons -->
+      <div class="cart-action-buttons">
+        <button id="btnProceedCheckout" type="button" class="btn-checkout-whatsapp">
+          <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i>
+          <span>CONFIRM ORDER VIA WHATSAPP</span>
+        </button>
+        <div class="cart-subactions">
+          <button id="btnClearCart" type="button" class="btn-clear-cart">
+            <i data-lucide="trash-2" class="w-3.5 h-3.5 mr-1 inline"></i>
+            <span>Clear Cart</span>
+          </button>
+          <span class="checkout-trust-badge">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-warm-gold mr-1 inline"></i>
+            <span>Official Dispatch: 80724 35415</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Scripts -->
+  <script src="js/scene3d.js"></script>
+  <script src="js/modal3d.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Quick Order Handler & Lucide Icons Initialize -->
+  <script>
+    window.TempleBrewSubmitOrder = function() {
+      const name = document.getElementById('orderName').value;
+      const blend = document.getElementById('orderBlend').value;
+      const city = document.getElementById('orderCity').value;
+      const msg = `Hello TEMPLEBREW, I would like to place an order:%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Item:* ${encodeURIComponent(blend)}%0A*Delivery City:* ${encodeURIComponent(city)}`;
+      window.open(`https://wa.me/918072435415?text=${msg}`, '_blank');
+    };
+
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
